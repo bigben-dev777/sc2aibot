@@ -140,10 +140,10 @@ def main():
 
     runner.reset()
 
-    if FLAGS.K_batches >= 0:
-        n_batches = FLAGS.K_batches * 1000
-    else:
-        n_batches = -1
+    # if FLAGS.K_batches >= 0:
+    #     n_batches = FLAGS.K_batches * 1000
+    # else:
+    #     n_batches = -1
 
     i = 0
 
