@@ -160,7 +160,7 @@ def main():
     except KeyboardInterrupt:
         pass
 
-    print("Okay. Work is done")
+    # print("Okay. Work is done")
     _print(i)
     _save_if_training(agent)
 
