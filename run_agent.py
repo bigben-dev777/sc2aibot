@@ -140,10 +140,10 @@ def main():
 
     runner.reset()
 
-    # if FLAGS.K_batches >= 0:
-    #     n_batches = FLAGS.K_batches * 1000
-    # else:
-    #     n_batches = -1
+    if FLAGS.K_batches >= 0:
+        n_batches = FLAGS.K_batches * 1000
+    else:
+        n_batches = -1
 
     i = 0
 
@@ -160,7 +160,7 @@ def main():
     except KeyboardInterrupt:
         pass
 
-    # print("Okay. Work is done")
+    print("Okay. Work is done")
     _print(i)
     _save_if_training(agent)
 

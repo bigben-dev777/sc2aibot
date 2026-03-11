@@ -80,7 +80,7 @@ class Runner(object):
 
             mb_values[:, n] = value_estimate
             mb_obs.append(latest_obs)
-            # mb_actions.append((action_ids, spatial_action_2ds))
+            mb_actions.append((action_ids, spatial_action_2ds))
 
             actions_pp = self.action_processer.process(action_ids, spatial_action_2ds)
             obs_raw = self.envs.step(actions_pp)
